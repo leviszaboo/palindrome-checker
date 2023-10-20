@@ -2,5 +2,7 @@ A simple web app that checks if an input is a palindrome. It saves the found pal
 Technologies used:
   - Next.js
   - Typescript
+  - Tailwind
   - Firebase (Firestore)
   - Zustand
+  - Shadcn UI
