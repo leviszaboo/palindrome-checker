@@ -56,13 +56,13 @@ export default function PalindromeList() {
         {error && <h3 className="text-red-500">{error}</h3>}
         {documents.length === 0 && !error && !loading && <h3>Nothing to display.</h3>}
         {documents.length !== 0 && (
-          <>
+          <div className="flex flex-col items-center align-center h-40">
             {documents.slice((page - 1) * pageSize, page * pageSize).map((document, index) => (
               <h3 className="text-xl" key={document.value + index.toString()}>
                 {document.value}
               </h3>
             ))}
-          </>
+          </div>
         )}
         <div className="lg:absolute lg:bottom-4 flex gap-4">
           <Button size={"sm"} onClick={() => setPage(page - 1)} disabled={page === 1 || loading || documents.length === 0}>{"<"}</Button>
