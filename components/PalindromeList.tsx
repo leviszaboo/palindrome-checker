@@ -64,7 +64,7 @@ export default function PalindromeList() {
             ))}
           </>
         )}
-        <div className="absolute bottom-4 flex gap-4">
+        <div className="lg:absolute lg:bottom-4 flex gap-4">
           <Button size={"sm"} onClick={() => setPage(page - 1)} disabled={page === 1 || loading || documents.length === 0}>{"<"}</Button>
           <Button size={"sm"} onClick={() => setPage(page + 1)} disabled={page === lastPage || loading || documents.length === 0}>{">"}</Button>
         </div>
