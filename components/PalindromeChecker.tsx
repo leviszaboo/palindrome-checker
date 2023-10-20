@@ -53,7 +53,7 @@ export default function PalindromeChecker() {
   }
   return (
     <>
-    <h1 className="p-4 font-bold text-2xl">Enter a word or sentence to check if it's a palindrome:</h1>
+    <h1 className="p-4 font-bold text-2xl">Enter a word or sentence to check if it&apos;s a palindrome:</h1>
     <div className="flex flex-col gap-4 p-4 items-center align-center w-50">
       {error && <h5 className="text-red">{error}</h5>}
       <Input className={error ? "border-black" : "border-red"} type="text" onChange={handleChange} />
